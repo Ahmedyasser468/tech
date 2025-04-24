@@ -1,0 +1,29 @@
+
+
+
+<div class="intro d-flex justify-content-between">
+    <div class="count d-flex">
+        <span>108</span>
+        <span id="found">products found</span>
+    </div>
+    
+                 
+</div>
+<hr>   
+<div class="container">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let product of products bg-secondary ">
+            <div class="productt text-center  border-bottom ">
+                <div class="pro-img">
+                    <img class="w-100" [src]="product.imageCover" [alt]="product.tittle">
+                </div>
+                <div class="pro-info">
+                     <div class="me-2">${{product.price}}</div>
+                    <h6> {{product.title}}</h6>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
