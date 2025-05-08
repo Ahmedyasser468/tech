@@ -1,4 +1,3 @@
-
 <div class="intro d-flex justify-content-between">
     <div class="count d-flex">
         <span>108</span>
@@ -10,7 +9,7 @@
 <hr>   
 <div class="container">
     <div class="row" >
-        <div class="col-md-3" *ngFor="let product of products bg-secondary ">
+        <div class="col-md-3" *ngFor="let product of productss bg-secondary ">
             <div class="productt text-center  border-bottom ">
                 <div class="pro-img">
                     <img class="w-100" [src]="product.imageCover" [alt]="product.tittle">
@@ -22,19 +21,15 @@
                 </div>
                 
             </div>
-            
-              
         </div>
         <div class="d-flex justify-content-center mt-4" id="p">
-            <button class="btn btn-outline-primary me-2" (click)="previousPage()" [disabled]="currentPage === 1">
+            <button class="btn btn-outline-primary me-2">
               Previous
             </button>
-            <span class="align-self-center mx-2" id="s">Page {{ currentPage }}</span>
-            <button class="btn btn-outline-primary" (click)="nextPage()" [disabled]="!hasMore">
+            
+            <button class="btn btn-outline-primary" >
               Next
             </button>
           </div>
-    </div>
-  
-      
-</div>
+          </div>
+        </div>

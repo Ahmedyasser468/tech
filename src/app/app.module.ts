@@ -7,13 +7,25 @@ import { CategoriesComponent } from './commerce/categories/categories.component'
 import { ProductsComponent } from './commerce/products/products.component';
 import { LandingComponent } from './commerce/landing/landing.component';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { ReadMorePipe } from './pipes/read-more.pipe';
+import { MusicComponent } from './commerce/music/music.component';
+import { YoungComponent } from './commerce/young/young.component';
+import { TechComponent } from './commerce/tech/tech.component';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoriesComponent,
     ProductsComponent,
-    LandingComponent
+    LandingComponent,
+    ReadMorePipe,
+    MusicComponent,
+    YoungComponent,
+    TechComponent,
+   
   ],
   imports: [
     BrowserModule,
